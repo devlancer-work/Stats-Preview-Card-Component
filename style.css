@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap'); /* font-family: 'Inter', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap'); /* font-family: 'Lexend Deca', sans-serif; */
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+body {
+    letter-spacing: 1.2px;
+    font-family:  'Inter', sans-serif;
+}
+img {
+    width: 100%;
+}
+.content-container {
+    background-color: hsl(233, 47%, 7%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 1130px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 20px rgba(0,0,0,.4);
+}
+.col-1 {
+    padding: 4rem;
+    width: 55%;
+    background-color: hsl(244, 38%, 16%);
+    overflow: hidden;
+    border-radius: 10px 0 0 10px;
+}
+.colored {
+    color: hsl(277, 64%, 61%);
+}
+.col-2 {
+    width: 45%;
+    overflow: hidden;
+    border-radius: 0 10px 10px 0;
+}
+.heading {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 700;
+}
+.para {
+    margin: 1.5rem 0 4rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* NUMBERS */
+.numbers {
+    display: flex;
+    align-content: center;
+    color: #fff;
+}
+.col {
+    padding-right: 50px;
+}
+.col h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.col p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+/* COL 2 */
+
+.col-2 {
+    background-image: url('/images/image-header-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.color {
+    width: 100%;
+    height: 100%;
+    background: hsla(277, 64%, 61%, 0.5);
+}
+
+
+
+@media screen and (max-width: 990px){
+    .content-container {
+        background-color: hsl(233, 47%, 7%);
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+        width: 600px;
+    }
+    .col-1 {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+    }
+    .col-2 {
+        width: 100%;
+        height: 440px;
+        border-radius: 0 0 10px 10px;
+    }
+    .numbers {
+        justify-content: center;
+    }
+    .col {
+        padding-right: 0;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .flex {
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+        width: 400px;
+    }
+    .heading {
+        font-size: 1.5rem;
+    }
+    .para {
+        font-size: 0.8rem;
+    }
+    .col h3 {
+        font-size: 1rem;
+    }
+    .col p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .flex {
+        width: 320px;
+    }
+    .col-1 {
+        padding: 4rem 2rem;
+    }
+}
